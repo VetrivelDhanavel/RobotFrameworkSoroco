@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on darwin)" generated="20230307 08:54:16.522" rpa="false" schemaversion="3">
+<suite id="s1" name="Soroco" source="/Users/vetri/Downloads/RobotFrameworkSoroco/testcases/Soroco.robot">
+<test id="s1-t1" name="Automation on Soroco page" line="11">
+<kw name="Open Browser Soroco" library="SorocoPage_keywords">
+<kw name="Launch Browser" library="UICommonKeywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://server-412-93.scout.soroco.cloud/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230307 08:54:16.580" level="INFO">Opening browser 'Chrome' to base url 'https://server-412-93.scout.soroco.cloud/'.</msg>
+<status status="PASS" starttime="20230307 08:54:16.580" endtime="20230307 08:54:33.274"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230307 08:54:33.275" endtime="20230307 08:54:33.700"/>
+</kw>
+<status status="PASS" starttime="20230307 08:54:16.580" endtime="20230307 08:54:33.701"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Signin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230307 08:54:33.701" level="INFO">Clicking element '//span[text()='Sign In']'.</msg>
+<status status="PASS" starttime="20230307 08:54:33.701" endtime="20230307 08:54:35.776"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230307 08:54:37.777" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230307 08:54:35.776" endtime="20230307 08:54:37.778"/>
+</kw>
+<status status="PASS" starttime="20230307 08:54:16.580" endtime="20230307 08:54:37.778"/>
+</kw>
+<kw name="Login" library="SorocoPage_keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Username}</arg>
+<arg>Amaresh.tadinada@soroco.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230307 08:54:37.781" level="INFO">Typing text 'Amaresh.tadinada@soroco.com' into text field '//input[@id='username']'.</msg>
+<status status="PASS" starttime="20230307 08:54:37.780" endtime="20230307 08:54:38.007"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Password}</arg>
+<arg>Soroco123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230307 08:54:38.007" level="INFO">Typing text 'Soroco123' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20230307 08:54:38.007" endtime="20230307 08:54:38.128"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Signin_Btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230307 08:54:38.128" level="INFO">Clicking element '//input[@id='kc-login']'.</msg>
+<status status="PASS" starttime="20230307 08:54:38.128" endtime="20230307 08:54:41.486"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230307 08:55:01.488" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20230307 08:54:41.486" endtime="20230307 08:55:01.488"/>
+</kw>
+<status status="PASS" starttime="20230307 08:54:37.779" endtime="20230307 08:55:01.489"/>
+</kw>
+<kw name="Choose Download" library="SorocoPage_keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_dropdown}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230307 08:55:01.491" level="INFO">Clicking element '//i[text()='keyboard_arrow_down']'.</msg>
+<status status="PASS" starttime="20230307 08:55:01.490" endtime="20230307 08:55:01.601"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230307 08:55:04.604" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230307 08:55:01.601" endtime="20230307 08:55:04.605"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Choose_Download}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230307 08:55:04.607" level="INFO">Clicking element '//a[normalize-space()='Download Scout']'.</msg>
+<status status="PASS" starttime="20230307 08:55:04.605" endtime="20230307 08:55:04.924"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230307 08:55:09.925" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230307 08:55:04.924" endtime="20230307 08:55:09.925"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_Download}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230307 08:55:09.928" level="INFO">Clicking element '//button[normalize-space()='Download']'.</msg>
+<status status="PASS" starttime="20230307 08:55:09.926" endtime="20230307 08:55:11.119"/>
+</kw>
+<status status="PASS" starttime="20230307 08:55:01.489" endtime="20230307 08:55:11.119"/>
+</kw>
+<status status="PASS" starttime="20230307 08:54:16.579" endtime="20230307 08:55:11.119"/>
+</test>
+<doc>Keywords for Automation Soroco Page</doc>
+<status status="PASS" starttime="20230307 08:54:16.523" endtime="20230307 08:55:11.119"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Soroco">Soroco</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
